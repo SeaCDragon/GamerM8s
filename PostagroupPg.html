@@ -1,7 +1,6 @@
 <!doctype html>
     <html>
         <head>
-            <title>Post a group</title>
             <script type='text/javascript'>
         function addFields(){
             // Number of inputs to create
@@ -24,16 +23,15 @@
                 container.appendChild(document.createElement("br"));
             }
         }
-
     </script>
             
         <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		
-		<nav class="navbar navbar-inverse">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+        <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">GamerM8s</a>
@@ -97,6 +95,12 @@
                     <br><input name="rank" required>
                 <br><h3>In-game name:</h3><br>
                     <input name="igname"><br>
+                    <br><h3>What platform:</h3><br>
+                    <select name="platform" required>
+                        <option value="ps">Playstation</option>
+                        <option value="xbox">Xbox</option>
+                        <option value="pc">PC</option>
+                    </select>
                 <h3>Number of teammates needed:</h3>
                     <br><select name="numberOfPlayersNeeded" required>
                         <option value="one">1</option>
@@ -125,8 +129,9 @@
             <style>
                 
                 body {
-                background-color: lightblue;
-            }
+    background-image: url(http://media.istockphoto.com/photos/gray-polygonal-background-picture-id514230814?k=6&m=514230814&s=612x612&w=0&h=sIamfonk2nq_q3jwY5nLbMVLKKZ9tA_Rwc6aedamjtY=);
+    background-color: #cccccc;
+}
             /* Full-width inputs */
             input[type=text], input[type=password] {
                 width: 100%;
