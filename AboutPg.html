@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+        <meta charset="utf-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+        
+        <title>About</title>
+        
+        <!-- The Modal -->
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" 
+            class="close" title="Close Modal">&times;</span>
+
+          <!-- Modal Content -->
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+            </div>
+
+            <div class="container">
+              <label><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <input type="checkbox" checked="checked"> Remember me
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        
+        <style>
+                
+                body {
+                background-color: lightblue;
+            }
+            div.leftDeagle {
+                -moz-transform: scaleX(-1);
+                -o-transform: scaleX(-1);
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                filter: FlipH;
+                -ms-filter: "FlipH";
+                position: relative;
+                bottom: 200px;
+                left: 100px;
+            }
+            div.relative {
+                position: relative;
+                bottom:00px;
+                right: 100px;
+            }
+            
+                        /* Bordered form */
+            form {
+                border: 3px solid #f1f1f1;
+            }
+            
+            /* Full-width inputs */
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            
+            /* Set a style for all buttons */
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+            
+            /* Add a hover effect for buttons */
+            button:hover {
+                opacity: 0.8;
+            }
+            
+            /* Extra style for the cancel button (red) */
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+            
+            /* Center the avatar image inside this container */
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+            
+            /* Avatar image */
+            img.avatar {
+                width: 40%;
+                border-radius: 50%;
+            }
+            
+            /* Add padding to containers */
+            .container {
+                padding: 16px;
+            }
+            
+            /* The "Forgot password" text */
+            span.psw {
+                float: right;
+                padding-top: 16px;
+            }
+            
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+                .cancelbtn {
+                    width: 100%;
+                }
+            }
+
+        </style>
+        
+    </head>
+        <body>
+            <center>
+            
+             <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">GamerM8s</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="inactive"><a href="file:///Users/hgpmac49/Desktop/GamerM8s/HomePg.html">Home</a></li>
+                        <li><a href="file:///Users/hgpmac49/Desktop/GamerM8s/PostagroupPg.html">Post a Group</a></li>
+                        <li><a href="#">Find a Group</a></li>
+
+                            <li class="active"><a href="#">About us</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right"> 
+                        <li><a href="file:///Users/hgpmac49/Desktop/GamerM8s/SignupPg.html"><span class="glyphicon glyphicon-user"></span>
+                            Sign Up</a></li>
+                        <li onclick="document.getElementById('id01').style.display='block'"><a><span class="glyphicon glyphicon-log-in"></span>
+                            Login</a></li>
+                            
+                    </ul>
+                </div>
+            </nav>
+            <h1>About us</h1>
+                <body><center><strong><p3><section>If your a gamer you know how difficult it can be to find to play multiplayer games alone , play with people who just mess around, or to just find a group of people with an objective. Most people just cheat of goof around without any goal or skill. Our resolution for this problem is gamermates</section></p3></strong></center></body>
+                
+                
+                
+            <body><center><strong><p3><section>
+                "GamerM8s is a website made for connecting people that are interested in the same games so no one has to play alone. You can share and converse with people who like games like call of duty cs go and many more we are workig to add game support constantly."</section></p3></strong></center></body>
+            <h1>
+                
+            </h1>
+            <a href="file:///Users/hgpmac49/Desktop/GamerM8s/SignupPg.html" class="btn btn-info btn-lg" role="button">Create Account</a>
+            <div id="myModal">
+                
+            <style>
+               body {
+    background-image: url(http://media.istockphoto.com/photos/gray-polygonal-background-picture-id514230814?k=6&m=514230814&s=612x612&w=0&h=sIamfonk2nq_q3jwY5nLbMVLKKZ9tA_Rwc6aedamjtY=);
+    background-color: #cccccc;
+}
+
+                    
+            </style>
+            
+            
+             
+                <center><p><font color="#000000"><strong></strong></p></center>
+            </div>
+           <img src="https://image.flaticon.com/icons/png/512/23/23228.png" alt="ndene" style="width:256px;height:256px;"><br>
+           <h3 style="color:red">Ndene Diallo</h3>
+           <h4>"Our main goal is to provide a unique gaming platform for gamers to feel like they are in a very competitive feeling that they are at the edge of their seats"</h4>
+           
+          <img src="https://image.flaticon.com/icons/png/512/23/23228.png" alt="ian" style="width:256px;height:256px;"><br>
+          <h3 style="color:red">Ian Bundy-Weiss</h3>
+          <h4>"I feel that this website will give people a better experience with Competitive games."</h4>
+          
+          <img src="https://image.flaticon.com/icons/png/512/23/23228.png" alt="eli" style="width:256px;height:256px;"><br>
+          <h3 style="color:red">Elijah Weller</h3>
+          <h4>"A progerammer is a person who can fix a problem you dont know you have"</h4
+        
+          
+        </body>
+</html>
+
+    

@@ -1,0 +1,201 @@
+<!doctype html>
+    <html>
+        <head>
+            <title>Post a group</title>
+            <script type='text/javascript'>
+        function addFields(){
+            // Number of inputs to create
+            var number = document.getElementById("member").value;
+            // Container <div> where dynamic content will be placed
+            var container = document.getElementById("container");
+            // Clear previous contents of the container
+            while (container.hasChildNodes()) {
+                container.removeChild(container.lastChild);
+            }
+            for (i=0;i<number;i++){
+                // Append a node with a random text
+                container.appendChild(document.createTextNode("Member " + (i+1)));
+                // Create an <input> element, set its type and name attributes
+                var input = document.createElement("input");
+                input.type = "text";
+                input.name = "member" + i;
+                container.appendChild(input);
+                // Append a line break 
+                container.appendChild(document.createElement("br"));
+            }
+        }
+
+    </script>
+            
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">GamerM8s</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="inactive"><a href="file:///Users/hgpmac49/Desktop/GamerM8s/HomePg.html">Home</a></li>
+                        <li class="active"><a href="file:///Users/hgpmac49/Desktop/GamerM8s/PostagroupPg.html">Post a Group</a></li>
+                        <li class="inactive"><a href="#">Find a Group</a></li>
+
+                            <li class="inactive"><a href="file:///Users/hgpmac49/Desktop/GamerM8s/AboutPg.html">About us</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right"> 
+                        <li><a href="file:///Users/hgpmac49/Desktop/GamerM8s/SignupPg.html"><span class="glyphicon glyphicon-user"></span>
+                            Sign Up</a></li>
+                        <li onclick="document.getElementById('id01').style.display='block'"><a href"#"><span class="glyphicon glyphicon-log-in"></span>
+                            Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- The Modal -->
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" 
+            class="close" title="Close Modal">&times;</span>
+
+          <!-- Modal Content -->
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+            </div>
+
+            <div class="container">
+              <label><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <input type="checkbox" checked="checked"> Remember me
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        
+        </head>
+        <body>
+            <center><h3>What game are you playing?</h3><br>
+            <form>
+                <select name="gameplay" required>
+                    <option value="csgo">Counter Strike Global Offensive</option>
+                    <option value="ow">Overwatch</option>
+                    <option value="cod">Call of Duty</option>
+                    <option value="rl">Rocket League</option>
+                   <option value="ow">Other</option>
+                </select>
+                <h3>Rank:</h3>
+                    <br><input name="rank" required>
+                <br><h3>In-game name:</h3><br>
+                    <input name="igname"><br>
+                <h3>Number of teammates needed:</h3>
+                    <br><select name="numberOfPlayersNeeded" required>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                    </select><br>
+                <h3>Game mode:</h3>
+                    <br><select name="gamemode" required>
+                        <option value="comp">Competitive</option>
+                        <option value="cas">Casual</option>
+                        <option value="leg">League</option>
+                        <option value="pug">PUGs</option>
+                    </select>
+            </form>
+            <div class="relative">
+               <img src="">
+            </div>
+            
+            <br>
+            <input id="member" name="member" value="" required> <br><h3>Number of members/Roles: (max. 5)</h3>
+            <a name="filldet" id="filldetails" onclick="addFields()" value="fill" class="btn btn-success">Fill Details</a>
+            <div id="container"/>
+            
+            <style>
+                
+                body {
+                background-color: lightblue;
+            }
+            /* Full-width inputs */
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            
+            /* Set a style for all buttons */
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+            
+            /* Add a hover effect for buttons */
+            button:hover {
+                opacity: 0.8;
+            }
+            
+            /* Extra style for the cancel button (red) */
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+            
+            /* Center the avatar image inside this container */
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+            
+            /* Avatar image */
+            img.avatar {
+                width: 40%;
+                border-radius: 50%;
+            }
+            
+            /* Add padding to containers */
+            .container {
+                padding: 16px;
+            }
+            
+            /* The "Forgot password" text */
+            span.psw {
+                float: right;
+                padding-top: 16px;
+            }
+            
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+                .cancelbtn {
+                    width: 100%;
+                }
+            }
+
+        </style>
+        
+        </body>
+        
+    </html>
